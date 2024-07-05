@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href=
+
+              "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <link href="http://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome/min.css" rel="stylsheet">
+        
+
+        <style>
+            ul{
+
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                height: 60px;
+                line-height: 20px;
+                background-color: black;
+                font-family: Arial,helvetica,sans-serif;
+                font-size: 30px;
+
+            }
+            li{
+                float: left;
+                border-right: ;
+            }
+            a{
+                display:flow-root;
+                padding: 18px;
+                color: white;
+                font-style:   italic;
+            }
+            a:hover{
+                background-color:  #bbb;
+            }
+            a:active{
+                background: red;
+            }
+            .sham{
+                float: right;
+            }
+            input [type=text]{
+                padding: 6px;
+                margin-top: 13px;
+                font-size: 17px;
+                border: none;
+            }
+            .sham button{
+                float:right;
+                padding: 6px 10px;
+                margin-top: 13px;
+                margin-right: 30px;
+
+                color-size:17px;
+                border: none;
+                cursor: pointer;
+            }
+
+
+
+
+
+            .btn{
+                width:150px;
+                height: 60px;
+
+                border: 3px solid orange;
+                margin-left:  20px;
+
+                color: white;
+                font-size: ;
+
+
+            }
+            .btn:focus{
+                outline:  aqua;
+            }
+            .srch:focus{
+                outline: none;
+            }
+
+
+
+
+
+
+
+            body{
+                width: 100vw;
+                height: 100vh;
+            }
+            .b1{
+                width: 100%;
+                height:80%;
+                background-color: lightgrey;
+                font-size: 50px;
+                color: white;
+                text-align: center;
+                margin: 10px 8px;
+            }
+            .b2{
+
+                width: 95%;
+                height:100%;
+
+                background-color:whitesmoke;
+                font-size: 25px;
+
+                color: black;
+                text-align:  ;
+                margin: 15px 8px;
+            }
+            details>summary {
+                padding:4px;
+                width: 200px;
+                background-color: lightskyblue;
+                border: none;
+                box-shadow: 1px 1px 2px #bbb;
+                cursor: pointer;
+
+            }
+            details>p{
+                background-color: white;
+                padding: 0px;
+                margin: 0;
+                box-shadow: 1px 1px 2px #bbbbbbb;
+            }
+            .b3{
+                width: 95%;
+                height:200%;
+
+                background-color:whitesmoke;
+                font-size: 120%;
+
+                color: black;
+                text-align: center ;
+                margin: 15px 8px;
+
+            }
+
+            .img_deg{
+                float: left;
+                width: 45%;
+
+            }
+            .img_deg{
+                width: px;
+                height: 300px;
+                border: 2px solid black;
+                border-radius: 40px;
+                box-shadow: 4px 7px 7px 0px black;
+                cursor: pointer;
+                margin: 2px;
+                transition: 100ms;
+            }
+            .img{
+                width: px;
+                height: 300px;
+                border: 2px solid black;
+                border-radius: 40px;
+                box-shadow: 4px 7px 7px 0px black;
+                cursor: pointer;
+                margin: 2px;
+                transition: 100ms;
+            }
+
+
+            .pos_cen{
+                border-radius: 10px ;
+
+                width:100% ;
+                left: 0px;
+                top: 20px;
+                background-color:;
+                margin: 10px;
+
+            }
+            .img{
+                float: left;
+                width: 45%;
+
+            }
+            .pos{
+                border-radius: 10px ;
+
+                width:100% ;
+                left: 0px;
+                top: 20px;
+                background-color:;
+                margin: 10px;
+
+            }
+            .pos_cen:hover{
+                background-color:  gold;
+            }
+            .b5{
+
+                width: 100%;
+                height:150%;
+
+                background-color:whitesmoke;
+                font-size: 25px;
+
+                color: black;
+                text-align: center ;
+                margin: 0px 0px;
+            }
+            .sanket{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+
+            }
+            .ram img{
+                width: px;
+                height: 300px;
+                border: 2px solid black;
+                border-radius: 40px;
+                box-shadow: 4px 7px 7px 0px black;
+                cursor: pointer;
+                margin: 2px;
+                transition: 100ms;
+            }
+            img:hover{
+                filter:  graytext;
+                transform: scale(1.03);
+            }
+
+
+
+            .b4{
+
+                width: 50%;
+                height:100%;
+
+                background-color:whitesmoke;
+                font-size: 25px;
+
+                color: black;
+                text-align:  center;
+                margin: 150px 400px;
+            }
+
+            *{
+                box-sizing: border-box;
+            }
+            input[type=text],select,textArea{
+                width: 100%;
+                padding: 12px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+                margin-top: 6px;
+                margin-bottom: 16px;
+                resize: vertical;
+
+            }
+            input[type=submit]{
+                background-color:  #04AA6D;
+                color: white;
+                padding: 12px 20px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+
+            }
+            input[type=submit]:hover{
+                background-color:  #45a049;
+
+            }
+            .container{
+                border-radius: 5px;
+                background-color: #f2f2f2;
+                padding: 20px;
+            }
+            .fa:hover {
+
+                opacity: 0.9;
+
+            }
+
+
+            .fa-linkedin {
+
+                background: #007bb5;
+
+                color: white;
+                border-radius:500%;
+
+
+            }
+
+
+            .fa-instagram {
+
+                background: radial-gradient(circle at 33% 100%,#fed373 4%,#f15245 30%,#d92e7f 62%,#9b36b7 85%,#515ecf);
+
+                color: white;
+                border-radius:200%;
+
+            }
+
+
+            .fa-facebook {
+
+                background: navy;
+
+                color: white;
+                border-radius:200%;
+
+            }
+            .fa-whatsapp {
+
+                background:lime;
+
+                color: white;
+                border-radius:200%;
+            }
+            .fa-youtube{
+
+                background:red;
+
+                color: white;
+                border-radius:200%;
+            }
+
+            .fa {
+
+                padding: 10px;
+
+                font-size: 20px;
+                height: 40px;
+
+                width: 35px;
+
+                text-decoration:  white;
+
+                margin: 40px 0px;
+            }
+
+
+
+
+
+
+
+
+            .b7{
+
+                width:50%;
+                height:30%;
+
+                background-color: lightgrey;
+                font-size: 25px;
+
+                color: black;
+                text-align: center;
+                margin: 150px 400px;
+            }
+            input[type=text], input[type=password] {
+                width: 80%;
+                padding: 12px 20px;
+                margin: 0px ;
+                display: inline-block;
+                border: 1px solid #ccc;
+                box-sizing: border-box;
+            }
+
+            /* Set a style for all buttons */
+            .b7 button {
+                background-color: #04AA6D;
+                color: white;
+                padding: 14px 20px;
+                margin: 8px 0;
+                border: none;
+                cursor: pointer;
+                width: 100%;
+            }
+
+            button:hover {
+                opacity: 0.8;
+            }
+
+            /* Extra styles for the cancel button */
+            .cancelbtn {
+                width: auto;
+                padding: 5px 14px;
+                background-color: #f44336;
+            }
+
+            /* Center the image and position the close button */
+            .imgcontainer {
+                text-align: center;
+                margin: 24px 0 12px 0;
+                position: relative;
+            }
+
+            img.avatar {
+                width: 40%;
+                border-radius: 50px;
+            }
+            .container {
+                padding: 16px;
+            }
+
+            span.psw {
+                float: right;
+                padding-top: 5px;
+                background-color:lightskyblue;
+
+            }
+
+            /* The Modal (background) */
+            .modal {
+                display: none; /* Hidden by default */
+                position: fixed; /* Stay in place */
+                z-index: 1; /* Sit on top */
+                left: 0;
+                top: 0;
+                width: 100%; /* Full width */
+                height: 100%; /* Full height */
+                overflow: auto; /* Enable scroll if needed */
+                background-color: rgb(0,0,0); /* Fallback color */
+                background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+                padding-top: 60px;
+            }
+
+            /* Modal Content/Box */
+            .modal-content {
+                background-color: #fefefe;
+                margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+                border: 1px solid #888;
+                width: 40%;
+                /* Could be more or less, depending on screen size */
+            }
+            /* The Close Button (x) */
+            .close {
+                position: absolute;
+                right: 25px;
+                top: 0;
+                color: #000;
+                font-size: 35px;
+                font-weight: bold;
+            }
+
+            .close:hover,
+            .close:focus {
+                color: red;
+                cursor: pointer;
+            }
+            /* Add Zoom Animation */
+            .animate {
+                -webkit-animation: animatezoom 0.6s;
+                animation: animatezoom 0.6s
+            }
+
+            @-webkit-keyframes animatezoom {
+                from {
+                    -webkit-transform: scale(0)
+                }
+                to {
+                    -webkit-transform: scale(1)
+                }
+            }
+
+            @keyframes animatezoom {
+                from {
+                    transform: scale(0)
+                }
+                to {
+                    transform: scale(1)
+                }
+            }
+            /* Change styles for span and cancel button on extra small screens */
+            @media screen and (max-width: 300px) {
+                span.psw {
+                    display: block;
+                    float: none;
+                }
+                .cancelbtn {
+                    width: 100%;
+                }
+            }
+
+
+
+
+            * {
+                box-sizing: border-box
+            }
+            body {
+                font-family: Verdana, sans-serif;
+                margin:0
+            }
+            .mySlides {
+                display: none
+            }
+            img {
+                vertical-align: middle;
+            }
+
+            /* Slideshow container */
+            .slideshow-container {
+                max-width: 1000px;
+                position: relative;
+                margin: auto;
+            }
+
+            /* Next & previous buttons */
+            .prev, .next {
+                cursor: pointer;
+                position: absolute;
+                top: 50%;
+                width: auto;
+                padding: 16px;
+                margin-top: -22px;
+                color: black;
+                font-weight: bold;
+                font-size: 18px;
+                transition: 0.6s ease;
+                border-radius: 0 3px 3px 0;
+                user-select: none;
+            }
+
+            /* Position the "next button" to the right */
+            .next {
+                right: 0;
+                border-radius: 3px 0 0 3px;
+            }
+
+            /* On hover, add a black background color with a little bit see-through */
+            .prev:hover, .next:hover {
+                background-color: rgba(0,0,0,0.8);
+            }
+
+            /* Caption text */
+            .text {
+                color: #f2f2f2;
+                font-size: 15px;
+                padding: 8px 12px;
+                position: absolute;
+                bottom: 8px;
+                width: 100%;
+                text-align: center;
+            }
+
+            /* Number text (1/3 etc) */
+            .numbertext {
+                color: #f2f2f2;
+                font-size: 12px;
+                padding: 8px 12px;
+                position: absolute;
+                top: 0;
+            }
+
+            /* The dots/bullets/indicators */
+            .dot {
+                cursor: pointer;
+                height: 15px;
+                width: 15px;
+                margin: 0 2px;
+                background-color: #bbb;
+                border-radius: 50%;
+                display: inline-block;
+                transition: background-color 0.6s ease;
+            }
+
+            .active, .dot:hover {
+                background-color: #717171;
+            }
+
+            /* Fading animation */
+            .fade {
+                animation-name: fade;
+                animation-duration: 1.5s;
+            }
+
+            @keyframes fade {
+                from {
+                    opacity: .4
+                }
+                to {
+                    opacity: 1
+                }
+            }
+
+            /* On smaller screens, decrease text size */
+            @media only screen and (max-width: 300px) {
+                .prev, .next,.text {
+                    font-size: 11px
+                }
+            }
+
+
+        </style>
+    </head>
+    <body>
+
+        <ul>
+
+            <li><a href="#a1" class="btn">Home</a></li>
+            <li><a href="#a2" class="btn">About</a></li>
+            <li><a href="#a3" class="btn">Service</a></li>
+            <li><a href="#a4" class="btn">Photo</a></li>
+            <li><a href="#a5" class="btn">Contact</a></li>
+            <li><a href="#a6" class="btn">login</a></li>
+            <div class="sham">
+                <form>
+                    <input type="text" placeholder="Search..." name="search">
+
+                </form>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+        </ul>
+
+
+
+        <div class="b1" id="a1">
+
+
+
+
+
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <div class="numbertext"></div>
+                    <img src="img/a8.jpg" height="500" width="1000" > 
+                    <div class="text">Caption Text</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext"></div>
+                    <img src="img/a2.jpg" height="500" width="1000" > 
+                    <div class="text">Caption Text</div>
+                </div>
+
+
+                <div class="mySlides fade">
+                    <div class="numbertext"></div>
+                    <img src="img/pudina.jpg" style="width:80%" > 
+                    <div class="text">Caption Text</div>
+                </div>
+
+
+                <div class="mySlides fade">
+                    <div class="numbertext"></div>
+                    <img src="img/salted.jpg" height="500" width="1000" >>
+                    <div class="text">Caption Two</div>
+                </div>
+
+
+                <div class="mySlides fade">
+                    <div class="numbertext"></div>
+                    <img src="img/a5.jpg" height="500" width="1000" > 
+                    <div class="text">Caption Three</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext"></div>
+                    <img src="img/banana.png" height="500" width="1000" > 
+                    <div class="text">Caption Three</div>
+                </div>
+            </div>
+
+
+
+
+            <a class="prev" onclick="plusSlides(-1)">|<<<</a>
+            <a class="next" onclick="plusSlides(1)">>>>|</a>
+
+        </div>
+
+
+
+
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+
+        </div>
+
+
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                let dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {
+                    slideIndex = 1
+                }
+                if (n < 1) {
+                    slideIndex = slides.length
+                }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+            }
+
+
+
+
+
+
+        </script>
+        <div class="b2" id="a2">
+            <h1>About</h1>
+            <!--div class="about-data"-->
+            <details>
+                <summary>Click Here</summary>
+                <p>The plant we toured was Frito-Lay's Killingly, CT site. We watched potatoes picked the day before at a Maine farm be delivered, washed, peeled, sliced and immediately cooked into Lay's Potato chips. Soon after, they were bagged and boxed for delivery to our region. Talk about local food!
+
+                    And with our new program, the NuVal™ Nutritional Scoring System, wouldn't you know these same Killingly-produced Lay's score about the same as their baked counterparts?
+                    Why? The fats in Lay's® Classic are heart healthy, helping drive the score up AND with a sodium level lower than Baked! Lay's® Classic, its NuVal™ Score isn't driven down as much. Plus, ingredients can be an indicator— traditional Lay's® has three ingredients: potatoes, oil and salt whereas Baked! has eight ingredients.
+                    As we visited Frito-Lay®, we learned how they tend to be the movers and shakers of snack food industry practices. For example, when science indicated trans fats (ie: those found in partially hydrogenated oils) actually did the opposite of what scientists thought they would do—decrease risk for heart disease—Frito-Lay switch the type of fat used in their chips to corn oil. This single switch in 2003 subsequently removed tons of trans fats out of the American food supply. Then in 2006, Frito-Lay switched over to sunflower oil. Thereby increasing the amount of heart healthy fats in the American food supply and removing half the saturated fat (the heart disease promoting fat) from their lines.
+
+                </p>
+            </details>
+
+
+
+
+        </div>
+
+
+
+        <div class="b3" id="a3">
+            <h1> service</h1>
+            <div class="pos_cen">
+
+
+                <img class="img_deg" src="img/s18.jpg"><details> <summary> click here</summary>
+
+                    <p>People never stop looking for new options to try. This is equally true when it comes to snacking options, as well. That is why Potato chips manufacturers in Hyderabad continue to experiment with flavours. The simple salted chips are not the only variety available in the market.
+
+                        A stroll in the stores’ snack aisles would confirm this fact well. From chilly flavoured chips to sour lemon and creamy variants, potato chips have provided diversity to taste like no other snack.
+
+                        Kushal Foods have become the best Potato chips manufacturers in Hyderabad . Our product qualities are high and reliable. We use the best and healthy manufacturing techniques to ensure that customers get the right kind of products. The entire marketing strategy and business sales operations that we carry out aim to further improve our products by customer demands. This is what has made our product popular with the masses across the country.</p></br>
+                </details>
+
+
+                <img class="img_deg" src="img/s21.jpg" height="250" width="200">    
+                <p>Munch on total visibility and traceability
+                    Snacks — they fill the gaps in our days. Likewise,A stroll in the stores’ snack aisles would confirm this fact well. From chilly flavoured chips to sour lemon and creamy variants, potato chips have provided diversity to taste like no other snack.
+                    the Plex Smart ManufacturingA stroll in the stores’ snack aisles would confirm this fact well. From chilly flavoured chips to sour lemon and creamy variants, potato chips have provided diversity to taste like no other snack.
+                    A stroll in the stores’ snack aisles would confirm this fact well. From chilly flavoured chips to sour lemon and creamy variants, potato chips have provided diversity to taste like no other snack.
+                    Platform fills the gaps in your process with total inventory, tracking, real-time data, and integrated quality management. Get insight you can act on immediately, so you can turn on a dime when a new flavor sensation sweeps.</p></br>
+
+
+
+
+                <img class="img" src="img/s11.jpg" height="200" width="200">
+
+                <p>In order to delete all the social media jokes A stroll in the stores’ snack aisles would confirm this fact well. From chilly flavoured chips to sour lemon and creamy variants, potato chips have provided diversity to taste like no other snack.
+                    A stroll in the stores’ snack aisles would confirm this fact well. From chilly flavoured chips to sour lemon and creamy variants, potato chips have provided diversity to taste like no other snack.
+                    A stroll in the stores’ snack aisles would confirm this fact well. From chilly flavoured chips to sour lemon and creamy variants, potato chips have provided diversity to taste like no other snack.
+                    on Kurkure, PepsiCo reportedly had spent around Rs 20 million. According to a report in Business Standard, PepsiCo India has secured an interim order from the Delhi High Court to delete hundreds of posts on Facebook, Twitter, Instagram and YouTube. There were several jokes and theories which were doing </p>
+
+
+
+                <img class="img" src="img/448.jpg" height="400" width="500">
+
+                <p>Automatic fried banana chips production line stroll in the stores’ snack aisles would confirm this fact well. From chilly flavoured chips to sour lemon and creamy variants, potato chips have provided diversity to taste like no other snack.
+
+                    Kushal Foods have become the best Potato chips stroll in the stores’ snack aisles would confirm this fact well. From chilly flavoured chips to sour lemon and creamy variants, potato chips have provided diversity to taste like no other snack.
+
+                    Kushal Foods have become the best Potato chips is made of stainless steel, with long working life. The full banana chips production line can process banana and plantain into fried chips, also process potato chips, sweet potato chips, cassava chips, etc, by changing the peeling machine.        <p>In order to delete all the social media jokes on Kurkure, PepsiCo reportedly had spent around Rs 20 million. According to a report in Business Standard, PepsiCo India has secured an interim order from the Delhi High Court to delete hundreds of posts on Facebook, Twitter, Instagram and YouTube. There were several jokes and theories which were doing round on social media that how Kurkure can catch fire easily, suggesting it contains plastic.</p></br>
+                </p>
+            </div>
+        </div>
+
+
+        <div class="b5" id="a4">
+            <h1>Photo</h1>
+            <div class="sanket">
+                <div class="ram">
+                    <img src="img/a1.jpg" height="250" width="500" 
+                         alt=""> 
+
+
+                    <img src="img/a2.jpg" height="250" width="500">
+
+                    <img src="img/a3.jpg"  height="250" width="450">
+
+                    <h1></h1>
+                    <img src="img/a4.jpg" height="250" width="498">
+                    <img src="img/a5.jpg" height="250" width="499">
+                    <img src="img/a6.jpg" height="250" width="499">
+                    <h1></h1>
+                    <img src="img/a7.jpg" height="250" width="499">
+                    <img src="img/a8.jpg" height="250" width="499">
+                    <img src="img/a9.jpg" height="250" width="499">
+
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="b4" id="a5">
+            <h1>Contact Form</h1>
+            <div class="container">
+                <form action="/action_page.php">
+                    <label for ="Fname">First Name</label>
+                    <input type="text" id="Fname" name="Firstname" placeholder="your name..">
+                    <label for="country"> Country</label>
+                    <select id="country" name="country">
+                        <option value="india"> India</option>
+                        <option value="USA"> USA</option>
+                        <option value="rushia"> rushia</option>
+
+                        <option value="Australia"> Australia</option>
+                        <option value="afghnistan"> afhganistan</option>
+                        <option value="china"> china</option>
+                    </select>
+                    <label for ="subject">subject</label>
+                    <textarea id="subject" name="subject" placeholder="write somting.." style="height: 170px"></textarea>
+                    <input type="submit" value="submit">
+                    <div class="stickyicon-list"> 
+
+
+
+
+
+                        <!-- Add font awesome icons -->
+
+                        <a href="http://www.linkedin.com/in/sanket-kharate-a959b62b9" class="fa fa-linkedin"></a>
+
+                        <a href="I'm on Instagram as @jai_hanuman_traders_karandi. Install the app to follow my photos and videos. https://www.instagram.com/invites/contact/?igsh=coqt4nnw3n2f&utm_content=uskfohj" class="fa fa-instagram"></a>
+
+                        <a href="https://www.facebook.com/sanket.kharate.127?mibextid=ZbWKwL" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-whatsapp"></a>
+                        <a href="https://youtu.be/wB3u2t4dnmU?si=ifOVIAE5e9FeEe_l" class="fa fa-youtube"></a>
+
+
+                    </div>
+
+
+
+
+
+                </form>
+            </div>
+
+
+        </div>
+
+
+
+
+
+        <div class="b7" id="a6">
+            <h2>Registeruser</h2>
+
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Logout</button>
+
+
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="img/avatar2.png"  alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <label>
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw"> <a href="#">Forgot password?</a> </span></br>
+      <a href="http://www.linkedin.com/in/sanket-kharate-a959b62b9" class="fa fa-linkedin"></a>
+       <a href="I'm on Instagram as @jai_hanuman_traders_karandi. Install the app to follow my photos and videos. https://www.instagram.com/invites/contact/?igsh=coqt4nnw3n2f&utm_content=uskfohj" class="fa fa-instagram"></a>
+
+        <a href="https://www.facebook.com/sanket.kharate.127?mibextid=ZbWKwL" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-whatsapp"></a>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  
+
+    </div>
+  </form>
+</div>
+
+
+
+
+
+
+
+    </body>
+</html>
